@@ -6,30 +6,6 @@
     <title>311 Calls Visualization</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Move these styles to your style.css file */
-        .bar {
-            fill: steelblue;
-        }
-        .bar:hover {
-            fill: orange;
-        }
-        svg {
-            width: 100%;
-            height: auto;
-        }
-        /* Responsive text styles */
-        @media (max-width: 768px) {
-            .axis text, .label {
-                font-size: smaller;
-            }
-        }
-        @media (max-width: 480px) {
-            .axis text, .label {
-                font-size: smallest;
-            }
-        }
-    </style>
 </head>
 <body>
     <h1>Top 10 Reasons for 311 Calls in Boston (2023)</h1>
@@ -37,30 +13,15 @@
 
     <!-- The SVG chart with a responsive viewBox will be appended here -->
     <div id="chart">
-        <!-- This SVG is for demonstration purposes. You'll need to generate the SVG using D3.js -->
-        <svg viewBox="0 0 960 500" preserveAspectRatio="xMidYMid meet">
-            <!-- Your D3.js generated chart elements will go here -->
+        <svg viewBox="0 0 3000 500" preserveAspectRatio="xMidYMid meet">
         </svg>
     </div>
 
     <footer>
         Data Source: City of Boston 311 Calls Dataset <br>
-        Chart by: [Your Name]
+        Chart by: Kimihiro Nakamura
     </footer>
 
     <script src="bar_chart.js"></script>
-    <script>
-        // Example of resizing function. You'll need to implement actual resizing logic in your D3 chart code.
-        function resizeChart() {
-            // Your code to resize and redraw the chart goes here.
-            // This could involve recalculating scales, axes, and other elements based on the new dimensions.
-        }
-
-        // Call resizeChart when the window is resized.
-        window.addEventListener('resize', resizeChart);
-
-        // Initial draw
-        resizeChart();
-    </script>
 </body>
 </html>
