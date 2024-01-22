@@ -1,1 +1,27 @@
-<!-- Your HTML goes here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>311 Calls Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Top 10 Reasons for 311 Calls in Boston (2023)</h1>
+    <h2>A count of calls of 311 in the city of Boston</h2>
+
+    <!-- The SVG chart with a responsive viewBox will be appended here -->
+    <div id="chart">
+        <svg viewBox="0 0 3000 500" preserveAspectRatio="xMidYMid meet">
+        </svg>
+    </div>
+
+    <footer>
+        Data Source: City of Boston 311 Calls Dataset <br>
+        Chart by: Kimihiro Nakamura
+    </footer>
+
+    <script src="bar_chart.js"></script>
+</body>
+</html>

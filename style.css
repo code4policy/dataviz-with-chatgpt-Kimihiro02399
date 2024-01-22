@@ -1,0 +1,27 @@
+
+
+
+/* Make sure your SVG or chart adjusts to the parent container */
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust font-sizes and other properties for smaller screens if necessary */
+h1 {
+        font-size: 20;
+}
+
+/* Adjust font-sizes and other properties for smaller screens if necessary */
+h2, footer {
+        font-size: 15;
+    }
+
+/* Existing styles for bars, if needed, should also be included in this CSS file */
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: orange;
+}
